@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact - Capstone Project</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Primary Navigation">
+      <a class="navbar-brand" href="index.html">My Capstone</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavContact" 
+              aria-controls="navbarNavContact" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavContact">
+         <ul class="navbar-nav">
+           <li class="nav-item">
+             <a class="nav-link" href="index.html">Home</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="about.html">About</a>
+           </li>
+           <li class="nav-item active">
+             <a class="nav-link" href="contact.html">Contact</a>
+           </li>
+         </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mt-4">
+    <section aria-label="Contact and API Call">
+      <h2>Contact & API Data</h2>
+      <p>This page fetches a random joke from an external API.</p>
+      <button id="fetchJoke" class="btn btn-primary mb-3">Fetch Random Joke</button>
+      <div id="jokeSpinner" class="d-flex justify-content-center my-3" style="display:none;">
+         <div class="spinner-border text-primary" role="status">
+           <span class="sr-only">Loading...</span>
+         </div>
+      </div>
+      <div id="jokeAlert" class="alert alert-info" role="alert" style="display:none;"></div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center p-3 mt-4" role="contentinfo">
+    <p>&copy; 2025 My Capstone Project. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
